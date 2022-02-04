@@ -4,7 +4,7 @@ class Platforms extends Phaser.Physics.Arcade.Sprite {
    
     constructor(scene, x, y, platformId) {
       super(scene, x, y);
-      
+      //this.platformPlacement = [];
       this.platformBody = scene.add.sprite(0, 0, 'platform', './assets/ground_sand_broken.png');
       this.platformWallBody = scene.add.sprite(0,0, 'platformWall', './assets/ground_sand_broken_wall.png');
       this.setSize(this.platformBody.width, this.platformBody.height);
@@ -12,16 +12,7 @@ class Platforms extends Phaser.Physics.Arcade.Sprite {
       this.add(this.platformBody);
       this.add(this.platformWallBody);
     }
-    generateFloor(){
-      for (i=0;i< 10;++i)
-      {
-        this.add(this.platformWallBody) => {
-          this.platformPlacement.forEach(scene => {
-              x: 500;
-          });
-        }
-      }
-    }
+    
   }
 
 /*  
